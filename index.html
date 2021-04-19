@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo_reservia"> <!-- Bloc Logo Reservia -->
+                
+            </div>
+            <nav> <!-- Menu de Navigation -->
+                <ul>
+                    <li> <!-- Lien Hébergements -->
+                        Hébergements
+                    </li>
+                    <li> <!-- Lien Activités -->
+                        Activités 
+                    </li>
+                </ul>
+            </nav>
+            <button title="Inscription" class="sign_up_button"> <!-- Lien d'inscription -->
+                S'inscrire
+            </button>
+        </header>
+        <div id="main_content"> <!-- Début Bloc contenu principal -->
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form method="POST"> <!-- Début Formulaire de recherche par ville -->
+                <div class="search_input">
+                    <span class="search_input_icon"></span> <!-- Ligne pour l'icone map -->
+                    <input type="search" name="ville" aria-label="Entrez le nom d'une ville" 
+                    autocomplete="on" placeholder="Marseille, France"> <!-- Champ de saisie Recherche -->
+                    <button type="submit"> <!-- Bouton validation recherche -->
+                        Rechercher
+                    </button>
+                </div>
+                <div class="filters"> <!-- Début Bloc filtres checkbox -->
+                    <span class="filters_title">Filtres</span>
+                    <!-- Filtre Economique -->
+                    <input name="type_hebergement" id="economique" type="checkbox"
+                    value="economique">
+                    <label for="economique class="filter_option">Économique</label>
+                    <!-- Filtre Familial -->
+                    <input name="type_hebergement" id="familial" type="checkbox"
+                    value="familial">
+                    <label for="familial" class="filter_option">Familial</label>
+                    <!-- Filtre Romantique -->
+                    <input name="type_hebergement" id="romantique" type="checkbox"
+                    value="romantique">
+                    <label for="romantique" class="filter_option">Romantique</label>
+                    <!-- Filtre Animaux autorisés -->
+                    <input name="type_hebergement" id="animaux_autorises" type="checkbox"
+                    value="animaux_autorises">
+                    <label for="animaux_autorises" class="filter_option">Animaux autorisés</label>
+                </div><!-- Fin Bloc filtres checkbox -->
+            </form><!-- Fin Formulaire de recherche par ville -->
+            <p class="infos_resultats">
+                <span class="icon_infos_resultats"></span><!-- Ligne pour placer l'icone informations -->
+                "Plus de 500 logements sont disponibles dans cette ville"
+            </p>
+            <div><!-- Début Bloc afichage résultats -->
+                <!-- Section résultats hébergements -->
+                <section id="hebergements">
+                    <h2>Hébergements à Marseille</h2>
+                    <div>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </div>
+                </section>
+                <!-- Section résultats populaires -->
+                <section id="resultats_populaires">
+                    <h2>Les plus populaires</h2>
+                    <div>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </div>
+                </section>
+                <!-- Section Activités -->
+                <section id="activities">
+                    <h2>Activités à Marseille</h2>
+                    <div>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </div>
+                </section>
+
+            </div><!-- Fin Bloc afichage résultats -->
+
+            <footer>
+                <nav><!-- Menu navigation du Footer --> 
+                    <section><!-- Section A propos -->
+                        <h2>A propos</h2>
+                        <ul>
+                            <li>
+                                <a href="">Fonctionnement du site</a>
+                            </li>
+                            <li>
+                                <a href="">Conditions générales de vente</a>
+                            </li>
+                            <li>
+                                <a href="">Données et confidentialité</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section><!-- Section Nos hébergements -->
+                        <h2>Nos hébergements</h2>
+                        <ul>
+                            <li>
+                                <a href="">Charte de qualité</a>
+                            </li>
+                            <li>
+                                <a href="">Soumettre votre hôtel</a>
+                            </li>`
+                        </ul>
+                    </section>
+                    <section><!-- Section Assistance -->
+                        <h2>Assistance</h2>
+                        <ul>
+                            <li>
+                                <a href="">Centre d'aide</a>
+                            </li>
+                            <li>
+                                <a href="">Nous contacter</a>
+                            </li>`
+                        </ul>
+                    </section>
+                </nav>
+            </footer>
+        </div><!-- Fin Bloc contenu principal -->
+    </body>
+</html>
