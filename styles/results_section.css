@@ -1,5 +1,5 @@
 /* Affichage en grille de mon bloc résultats */
-.results 
+.results
 {
     margin-bottom: 63px;
     display: grid;
@@ -8,10 +8,14 @@
 }
 
 /* Affichage de la section du resultats des hébergements */
+.results section #hebergements
+{
+
+}
 .results section .results_hebergements 
 {
     grid-column: span 2;
-   background-color: #f2f2f2;
+    background-color: #f2f2f2;
     border-radius: 30px;
     padding: 49px 41px;
     min-width: 410px;
