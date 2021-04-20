@@ -1,0 +1,57 @@
+/* Affichage du header */
+header 
+{
+    margin: 0 auto;
+    max-width: 1980px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Padding sur la balise image du logo */
+header .logo_reservia img 
+{
+    padding: 35px 0 0 0;
+}
+
+/* Position du logo */
+header .logo_reservia 
+{
+    flex-grow: 1;
+    padding-left: 20px;
+}
+/* Affichage du menu de navigation */
+nav 
+{
+    display: block;
+}
+
+/* Affichage de la liste a puces du menu de navigation */
+header nav ul 
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 311px;
+    justify-content: space-around;
+}
+
+/* Affichage des liens du menu navigation */
+header nav li a 
+{
+    padding: 48px 0;
+    display: block;
+    border-top: 2px solid rgba(245, 245, 245, 0);
+    color: black;
+}
+
+/* Bouton Lien d'inscription dans le header */
+header .sign_up_button 
+{
+    background-color: unset;
+    border: none;
+    padding: 0 20px;
+    margin: 35px 25px;
+    font-weight: bold;
+    color: #0065fc;
+}

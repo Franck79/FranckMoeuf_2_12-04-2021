@@ -1,0 +1,142 @@
+/* Font family du body*/
+body 
+{
+    font-family: "Raleway", sans-serif;
+}
+
+/* Masquage du style liste a puces */
+ul 
+{
+    list-style: none;
+}
+
+/* Affichage des différents items de la liste a puces */
+li 
+{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* Styles des liens de la page */
+a 
+{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Affichage des titres h1 */
+h1 
+{
+    margin-bottom: 0.4em;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Fonts pour les titres h1 et h2 */
+h1, h2 
+{
+    font-weight: bold;
+}
+
+/* marge en bas du paragraphe + le titre */
+ h1 + p 
+ {
+     margin-bottom: 1.3em;
+ }
+
+/* Affichage block pour les paragraphes */
+p 
+{
+    display: block;
+}
+
+/* Styles pour tous les boutons */
+button 
+{
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+}
+
+/* Fonts pour toutes les zones de saisie, filtres et boutons */
+button, input, optgroup, select, textarea 
+{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/* texte visible en cas de dépassement sur input et boutons */
+button, input 
+{
+    overflow: visible;
+}
+
+/* font du formulaire */
+form 
+{
+    font-weight: bold;
+}
+
+/* Couleur des icones pour chaque filtres */
+i 
+{
+    color: #0065fc;
+}
+
+/* Marge en bas des titres h2 */
+h2 
+{
+    margin: 0 0 1.75rem 0;
+}
+
+/* Affichage du paragraphe informations résultats */
+.infos_resultats 
+{
+    margin: 42px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Affichage du bloc contenu principal */
+div #main_content 
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 1980px;
+}
+
+/* Affichage d'un article */
+article 
+{
+    display: block;
+}
+
+/* Pas de bordure pour toutes les images */
+img 
+{
+    border-style: none;
+}
+
+/* Affichage des titres h3 */
+h3 
+{
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+/* Couleur pour les étoiles inactives */
+i.inactive 
+{
+    color: #f2f2f2;
+}
+
+
+
+
+
+

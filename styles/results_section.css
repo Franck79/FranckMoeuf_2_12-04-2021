@@ -1,0 +1,84 @@
+/* Affichage en grille de mon bloc résultats */
+.results 
+{
+    margin-bottom: 63px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+/* Affichage de la section du resultats des hébergements */
+.results section .results_hebergements 
+{
+    grid-column: span 2;
+   background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 49px 41px;
+    min-width: 410px;
+}
+
+/* Affichage des articles dans la section resultats des hébergements */
+section .results_hebergements .articles_hebergements {
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+    margin-bottom: 35px;
+}
+
+/* Affichage des articles en mode grille */
+section .articles_hebergements 
+{
+    display: grid;
+    grid-gap: 1.75rem;
+}
+
+/* Affichage d'un article dans le bloc des articles hébergmements */
+.articles_hebergements article {
+    border-radius: 30px;
+    border: solid white 5px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 12px 3px #d2d2d2;
+}
+
+/* Affichage lien sur un article résultats hébergements */
+.articles_hebergements article a 
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Redimentionnement d'un image d'un article */
+.results_hebergements article img 
+{
+    height: 118px;
+    width: 100%;
+}
+
+
+.articles_hebergements article img 
+{
+    object-fit: cover;
+}
+
+/* Affichage du texte d'un article */
+.articles_hebergements article .article_text 
+{
+    margin: 15px 11px 9px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Marges extérieurs pour les titres h3 des articles hébergements */
+.articles_hebergements article h3 {
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+/* Marges extérieurs pour les paragraphes des articles hébergements */
+.articles_hebergements article .article_text p 
+{
+    margin-bottom: 13px;
+    margin-top: 0px;
+    flex-grow: 3;
+}

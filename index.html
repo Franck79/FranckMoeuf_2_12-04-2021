@@ -3,25 +3,33 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/search.css" />
+        <link rel="stylesheet" href="styles/results_section.css" />
         <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d2cfb79ae5.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div class="logo_reservia"> <!-- Bloc Logo Reservia -->
-                
+                <a href="" title="Retour à la page d'accueil">
+                    <img src="images/logo/Reservia.svg" alt="logo de reservia">
+                </a>
             </div>
             <nav> <!-- Menu de Navigation -->
                 <ul>
                     <li> <!-- Lien Hébergements -->
-                        Hébergements
+                        <a href="#hebergement" title="Résultats hébergments">Hébergements</a>
                     </li>
                     <li> <!-- Lien Activités -->
-                        Activités 
+                        <a href="#activities" title="Résultats activités">Activités</a>
                     </li>
                 </ul>
             </nav>
             <button title="Inscription" class="sign_up_button"> <!-- Lien d'inscription -->
-                S'inscrire
+                <a href="#inscription" title="Inscription">S'inscrire</a>
             </button>
         </header>
         <div id="main_content"> <!-- Début Bloc contenu principal -->
@@ -29,7 +37,9 @@
             <p>En plein centre ville ou en pleine nature</p>
             <form method="POST"> <!-- Début Formulaire de recherche par ville -->
                 <div class="search_input">
-                    <span class="search_input_icon"></span> <!-- Ligne pour l'icone map -->
+                    <span class="search_input_icon"><!-- Ligne pour l'icone map -->
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span> 
                     <input type="search" name="ville" aria-label="Entrez le nom d'une ville" 
                     autocomplete="on" placeholder="Marseille, France"> <!-- Champ de saisie Recherche -->
                     <button type="submit"> <!-- Bouton validation recherche -->
@@ -38,37 +48,119 @@
                 </div>
                 <div class="filters"> <!-- Début Bloc filtres checkbox -->
                     <span class="filters_title">Filtres</span>
-                    <!-- Filtre Economique -->
-                    <input name="type_hebergement" id="economique" type="checkbox"
-                    value="economique">
-                    <label for="economique class="filter_option">Économique</label>
-                    <!-- Filtre Familial -->
-                    <input name="type_hebergement" id="familial" type="checkbox"
-                    value="familial">
-                    <label for="familial" class="filter_option">Familial</label>
-                    <!-- Filtre Romantique -->
-                    <input name="type_hebergement" id="romantique" type="checkbox"
-                    value="romantique">
-                    <label for="romantique" class="filter_option">Romantique</label>
-                    <!-- Filtre Animaux autorisés -->
-                    <input name="type_hebergement" id="animaux_autorises" type="checkbox"
-                    value="animaux_autorises">
-                    <label for="animaux_autorises" class="filter_option">Animaux autorisés</label>
+                    <div class="filters_options"><!-- Début bloc des filtres checkbox -->
+                        <!-- Filtre Economique -->
+                        <input name="type_hebergement" id="economique" type="checkbox"
+                        value="economique">
+                        <label for="economique" class="filter_option">
+                            <span class="filter_option_icon"><!-- Icone pour le filtre Economique -->
+                                <i class="fas fa-money-bill-wave"></i>
+                            </span>
+                            <span class="filter_option_label">Économique</span><!-- Libellé filtre Economique -->
+                        </label>
+                        <!-- Filtre Familial -->
+                        <input name="type_hebergement" id="familial" type="checkbox"
+                        value="familial">
+                        <label for="familial" class="filter_option">
+                            <span class="filter_option_icon"><!-- Icone pour le filtre Familial -->
+                                <i class="fas fa-child"></i>
+                            </span>
+                            <span class="filter_option_label">Familial</span><!-- Libellé filtre Familial -->
+                        </label>
+                        <!-- Filtre Romantique -->
+                        <input name="type_hebergement" id="romantique" type="checkbox"
+                        value="romantique">
+                        <label for="romantique" class="filter_option">
+                            <span class="filter_option_icon"><!-- Icone pour le filtre Romantique -->
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            <span class="filter_option_label">Romantique</span><!-- Libellé filtre Romantique -->
+                        </label>
+                        <!-- Filtre Animaux autorisés -->
+                        <input name="type_hebergement" id="animaux_autorises" type="checkbox"
+                        value="animaux_autorises">
+                        <label for="animaux_autorises" class="filter_option">
+                            <span class="filter_option_icon"><!-- Icone pour le filtre Animaux autorisés -->
+                                <i class="fas fa-dog"></i>
+                            </span>
+                            <span class="filter_option_label">Animaux autorisés</span><!-- Libellé filtre Animaux autorisés -->
+                        </label>
+                    </div><!-- Fin bloc des filtres checkbox -->
                 </div><!-- Fin Bloc filtres checkbox -->
             </form><!-- Fin Formulaire de recherche par ville -->
             <p class="infos_resultats">
                 <span class="icon_infos_resultats"></span><!-- Ligne pour placer l'icone informations -->
-                "Plus de 500 logements sont disponibles dans cette ville"
+                Plus de 500 logements sont disponibles dans cette ville
             </p>
-            <div><!-- Début Bloc afichage résultats -->
+            <div class="results"><!-- Début Bloc affichage résultats -->
                 <!-- Section résultats hébergements -->
-                <section id="hebergements">
+                <section id="hebergements" class="results_hebergements">
                     <h2>Hébergements à Marseille</h2>
-                    <div>
-                        <article></article>
-                        <article></article>
-                        <article></article>
-                        <article></article>
+                    <div class="articles_hebergements">
+                        <article>
+                            <a href="#auberge-la-cannebiere" title="Vers la page de Auberge la Cannebière">
+                                <img role="img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                                <div class="article_text"><!-- Début Bloc texte Auberge la Cannebière-->
+                                    <h3>Auberge la Cannebière</h3>
+                                    <p>Nuit à partir de <strong>25€</strong></p>
+                                    <span role="img" aria-label="Hébergment 3 étoiles">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star inactive"></i>
+                                    </span>
+                                </div><!-- Fin Bloc texte Auberge la Cannebière-->
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#hotel-du-port" title="Vers la page de Hôtel du port">
+                                <img role="img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                                <div class="article_text"><!-- Début Bloc texte Hôtel du port-->
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de <strong>23€</strong></p>
+                                    <span role="img" aria-label="Hébergment 3 étoiles">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </span>
+                                </div><!-- Fin Bloc texte Hôtel du port-->
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#hotel-les-mouettes" title="Vers la page de Hôtel Les mouettes">
+                            <img role="img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                            <div class="article_text"><!-- Début Bloc texte Hôtel Les mouettes-->
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de <strong>96€</strong></p>
+                                <span role="img" aria-label="Hébergment 3 étoiles">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star inactive"></i>
+                                </span>
+                            </div><!-- Fin Bloc texte Hôtel Les mouettes-->
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#hotel-de-la-mer" title="Vers la page de Hôtel de la mer">
+                                <img role="img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                                <div class="article_text"><!-- Début Bloc texte Hôtel de la mer-->
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de <strong>52€</strong></p>
+                                    <span role="img" aria-label="Hébergment 3 étoiles">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star inactive"></i>
+                                    </span>
+                                </div><!-- Fin Bloc texte Hôtel de la mer-->
+                                </a>
+                        </article>
                         <article></article>
                         <article></article>
                     </div>
@@ -95,7 +187,7 @@
                     </div>
                 </section>
 
-            </div><!-- Fin Bloc afichage résultats -->
+            </div><!-- Fin Bloc affichage résultats -->
 
             <footer>
                 <nav><!-- Menu navigation du Footer --> 
