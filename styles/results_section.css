@@ -8,13 +8,10 @@
 }
 
 /* Affichage de la section du resultats des hébergements */
-.results section #hebergements
-{
 
-}
-.results section .results_hebergements 
+.results section.results_hebergements 
 {
-    grid-column: span 2;
+    grid-column: span 2 / span 0;
     background-color: #f2f2f2;
     border-radius: 30px;
     padding: 49px 41px;
@@ -22,7 +19,7 @@
 }
 
 /* Affichage des articles dans la section resultats des hébergements */
-section .results_hebergements .articles_hebergements {
+section.results_hebergements .articles_hebergements {
     grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
     margin-bottom: 35px;
 }
@@ -49,6 +46,7 @@ section .articles_hebergements
     display: flex;
     flex-direction: column;
     height: 100%;
+    color: black;
 }
 
 /* Redimentionnement d'un image d'un article */
@@ -85,4 +83,28 @@ section .articles_hebergements
     margin-bottom: 13px;
     margin-top: 0px;
     flex-grow: 3;
+}
+
+/* Affichage de la section résultats poppulaires */
+.results section.results_popular 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 49px 41px;
+    min-width: 410px;
+}
+
+/* Affichage titre h2 pour la section résultats populaires */
+.results section.results_popular h2 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Couleur de l'icone stats */
+.results section.results_popular h2 i 
+{
+    color: black;
 }
