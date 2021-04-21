@@ -2,6 +2,8 @@
 body 
 {
     font-family: "Raleway", sans-serif;
+    margin: 0;
+    display: block;
 }
 
 /* Masquage du style liste a puces */
@@ -103,11 +105,11 @@ h2
 }
 
 /* Affichage du bloc contenu principal */
-div #main_content 
+div.main_content 
 {
     display: block;
     margin: 0 auto;
-    max-width: 1980px;
+    max-width: 1350px;
 }
 
 /* Affichage d'un article */

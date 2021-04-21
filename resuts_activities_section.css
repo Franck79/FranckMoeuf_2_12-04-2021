@@ -1,0 +1,48 @@
+/* Affichage en 3 colonnes de la section résultats activités */
+.results section.results_activities 
+{
+    grid-column: span 3;
+    box-sizing: border-box;
+}
+
+/* Affichage du bloc des articles activités  */
+section.results_activities .articles_popular 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+    grid-auto-flow: dense;
+}
+
+/* Affichage articles sur 2 lignes */
+section.results_activities article.article_activities 
+{
+    grid-row: span 2;
+}
+
+/* Pas de bordure pour les articles */
+.results_activities article 
+{
+    border: none;
+}
+
+/* Affichage contenu cliquable */
+.results_activities article a 
+{
+    justify-content: flex-end;
+}
+
+/* Hauteur image article */
+.results_activities article img 
+{
+    height: 100%;
+}
+
+/* Affichage titre h3 d'un article */
+.results_activities article h3 
+{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin: 0 15px;
+    line-height: 1.5;
+}
