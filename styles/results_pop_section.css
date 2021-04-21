@@ -1,0 +1,102 @@
+/* Affichage de la section résultats poppulaires */
+.results section.results_popular 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 49px 41px;
+    min-width: 410px;
+}
+
+/* Affichage titre h2 pour la section résultats populaires */
+.results section.results_popular h2
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Couleur de l'icone stats dans le h2 de la section résultats populaire */
+.results section.results_popular h2 i
+{
+    color: black;
+}
+
+/* Affichage des éléments articles en grille dans la section résultats populaires */
+section.results_popular .articles_popular 
+{
+    flex-grow: 2;
+    grid-template-rows: repeat(3, minmax(145px, 100%));
+}
+
+/* Affichage d'un article */
+section .articles_popular 
+{
+    display: grid;
+    grid-gap: 1.75rem;
+}
+
+/* Hauteur min d'un article */
+section.results_popular article 
+{
+    min-height: 160px;
+}
+
+/* Bordures d'un article */
+.articles_popular article 
+{
+    border-radius: 30px;
+    border: solid white 5px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 12px 3px #d2d2d2;
+}
+
+/* affichage en ligne des articles dans la section résultat populaires */
+.results_popular article a 
+{
+    flex-direction: row;
+}
+
+/* Affichage d'un item article résultats populaire */
+.articles_popular article a 
+{
+    display: flex;
+    height: 100%;
+}
+
+/* Largeur max et hauteur min d'une image d'un article Résultat populaires  */
+.results_popular article img 
+{
+    max-width: 40%;
+    min-height: 160px;
+}
+
+/* Image redimensionner en mode cover selon l'affichage */
+.articles_popular article img 
+{
+    object-fit: cover;
+}
+
+/* Affichage bloc texte d'un article résultats populaire */
+.articles_popular article .article_text {
+    margin: 15px 11px 9px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Affichage titre h3 d'un article résultat populaire */
+.articles_popular article h3 
+{
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+/* Affichage paragraphe texte d'un article résultat populaire */
+.articles_popular article .article_text p 
+{
+    margin-bottom: 13px;
+    margin-top: 0px;
+    flex-grow: 3;
+}
