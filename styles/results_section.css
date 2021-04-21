@@ -11,7 +11,7 @@
 
 .results section.results_hebergements 
 {
-    grid-column: span 2 / span 0;
+    grid-column: span 2;
     background-color: #f2f2f2;
     border-radius: 30px;
     padding: 49px 41px;
@@ -46,7 +46,6 @@ section .articles_hebergements
     display: flex;
     flex-direction: column;
     height: 100%;
-    color: black;
 }
 
 /* Redimentionnement d'un image d'un article */
@@ -85,26 +84,9 @@ section .articles_hebergements
     flex-grow: 3;
 }
 
-/* Affichage de la section résultats poppulaires */
-.results section.results_popular 
+/* Affichage de mon lien Afficher Plus */
+.results section .results_show_more 
 {
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    padding: 49px 41px;
-    min-width: 410px;
-}
-
-/* Affichage titre h2 pour la section résultats populaires */
-.results section.results_popular h2 
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Couleur de l'icone stats */
-.results section.results_popular h2 i 
-{
-    color: black;
+    margin-top: auto;
+    font-weight: bold;
 }

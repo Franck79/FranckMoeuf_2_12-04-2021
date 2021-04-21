@@ -55,3 +55,8 @@ header .sign_up_button
     font-weight: bold;
     color: #0065fc;
 }
+
+header .sign_up_button a
+{
+    color: #0065fc;
+}
