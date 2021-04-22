@@ -6,7 +6,7 @@
 }
 
 /* Affichage du bloc des articles activités  */
-section.results_activities .articles_popular 
+section.results_activities .articles_activities 
 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -20,22 +20,45 @@ section.results_activities article.article_activities
     grid-row: span 2;
 }
 
+/* Bordure d'un artcile dans la section */
+.articles_activities article 
+{
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 12px 3px #d2d2d2;
+}
+
 /* Pas de bordure pour les articles */
 .results_activities article 
 {
     border: none;
 }
 
-/* Affichage contenu cliquable */
+/* Affichage contenu cliquable a dans la section */
 .results_activities article a 
 {
     justify-content: flex-end;
+}
+
+/* Affichage contenu cliquable dans le bloc des articles afin d'afficher le titre h3 */
+.articles_activities article a 
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Hauteur image article */
 .results_activities article img 
 {
     height: 100%;
+}
+
+/* Affichage en mode cover d'une image dans un article */
+.articles_activities article img 
+{
+    object-fit: cover;
 }
 
 /* Affichage titre h3 d'un article */
