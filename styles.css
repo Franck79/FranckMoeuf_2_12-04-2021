@@ -1,0 +1,686 @@
+                                /* ------- Global CSS ------- */
+
+
+/* Font family du body*/
+body 
+{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    display: block;
+}
+
+/* Masquage du style liste a puces */
+ul 
+{
+    list-style: none;
+}
+
+/* Affichage des différents items de la liste a puces */
+li 
+{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* Styles des liens de la page */
+a 
+{
+    text-decoration: none;
+    background-color: transparent;
+    color:black;
+}
+
+/* Affichage des titres h1 */
+h1 
+{
+    margin-bottom: 0.4em;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Fonts pour les titres h1 et h2 */
+h1, h2 
+{
+    font-weight: bold;
+}
+
+/* marge en bas du paragraphe + le titre */
+ h1 + p 
+ {
+     margin-bottom: 1.3em;
+ }
+
+/* Affichage block pour les paragraphes */
+p 
+{
+    display: block;
+}
+
+/* Styles pour tous les boutons */
+button 
+{
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+}
+
+/* Fonts pour toutes les zones de saisie, filtres et boutons */
+button, input, optgroup, select, textarea 
+{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/* texte visible en cas de dépassement sur input et boutons */
+button, input 
+{
+    overflow: visible;
+}
+
+/* font du formulaire */
+form 
+{
+    font-weight: bold;
+}
+
+/* Couleur des icones pour chaque filtres */
+i 
+{
+    color: #0065fc;
+}
+
+/* Marge en bas des titres h2 */
+h2 
+{
+    margin: 0 0 1.75rem 0;
+}
+
+/* Affichage du paragraphe informations résultats */
+.infos_resultats 
+{
+    margin: 42px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Affichage de l'icone info */
+.infos_resultats .icon_infos_resultats 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #f2f2f2;
+    border-radius: 30px;
+    padding: 8px;
+    width: 16px;
+    height: 16px;
+    margin-right: 11px;
+}
+
+/* Affichage du bloc contenu principal */
+div.main_content 
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+/* Affichage d'un article */
+article 
+{
+    display: block;
+}
+
+/* Pas de bordure pour toutes les images */
+img 
+{
+    border-style: none;
+}
+
+/* Affichage des titres h3 */
+h3 
+{
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+/* Couleur pour les étoiles inactives */
+i.inactive 
+{
+    color: #f2f2f2;
+}
+
+
+                            /* ------- Header CSS ------- */
+
+
+
+/* Affichage du header */
+header 
+{
+    margin: 0 auto;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Padding sur la balise image du logo */
+header .logo_reservia img 
+{
+    padding: 35px 0 0 0;
+}
+
+/* Position du logo */
+header .logo_reservia 
+{
+    flex-grow: 1;
+    padding-left: 20px;
+}
+/* Affichage du menu de navigation */
+nav 
+{
+    display: block;
+}
+
+/* Affichage de la liste a puces du menu de navigation */
+header nav ul 
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 311px;
+    justify-content: space-around;
+}
+
+/* Affichage des liens du menu navigation */
+header nav li a 
+{
+    padding: 48px 0;
+    display: block;
+    border-top: 2px solid rgba(245, 245, 245, 0);
+    color: black;
+}
+
+/* Bouton Lien d'inscription dans le header */
+header .sign_up_button 
+{
+    background-color: unset;
+    border: none;
+    padding: 0 20px;
+    margin: 35px 25px;
+    font-weight: bold;
+    color: #0065fc;
+}
+
+header .sign_up_button a
+{
+    color: #0065fc;
+}
+
+
+
+                            /* ------- Search CSS ------- */
+
+
+
+/* Affichage du Bloc Recherche */
+.search_input 
+{
+    margin: 15px 0 31px;
+    box-shadow: inset 0 0 0 1px #f2f2f2;
+    border-radius: 17px;
+    overflow: hidden;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Affichage Span icon map */
+.search_input .search_input_icon {
+    min-width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+/* Icon map Color */
+.search_input .search_input_icon i 
+{
+    color: black;
+}
+
+/* Input Recherche */
+.search_input input 
+{
+    background-color: #ffffff00;
+    min-width: 160px;
+}
+
+/* Input and Button */
+.search_input input, .search_input button 
+{
+    border: none;
+    padding: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Button Submit style */
+.search_input button[type="submit"] 
+{
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    min-width: 50px;
+}
+
+/* Affichage des filtres */
+.filters 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Style et position du titre des filtres */
+.filters .filters_title 
+{
+    box-shadow: none;
+    margin: 20px 24px 20px 0px;
+}
+
+/* Affichage du bloc des filtres option checkbox */
+.filters .filters_options 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Position des input de type hebergement */
+.filters_options input[name="type_hebergement"] 
+{
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+/* Affichage des filtres checkbox*/
+.filter_option 
+{
+    margin: 5px 24px 5px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 0 2px #f2f2f2;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Affichage des icones pour chaque filtre */
+.filter_option .filter_option_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+    background-color: #deebff;
+    border-radius: 50px;
+}
+
+/* Affichage des libellés pour chaque filtre */
+.filter_option .filter_option_label {
+    padding: 0 20px 0 15px;
+    cursor: pointer;
+}
+
+
+
+                        /* ------- Section Results hébergments CSS ------- */
+
+
+
+
+/* Affichage en grille de mon bloc résultats */
+.results
+{
+    margin-bottom: 63px;
+}
+
+@media (min-width: 768px)
+{
+    .results
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    } 
+}
+
+/* Affichage de la section du resultats des hébergements */
+
+.results section.results_hebergements 
+{
+    grid-column: span 2;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 49px 41px;
+    min-width: 410px;
+}
+
+/* Affichage des articles dans la section resultats des hébergements */
+section.results_hebergements .articles_hebergements {
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+    margin-bottom: 35px;
+}
+
+/* Affichage des articles en mode grille */
+section .articles_hebergements 
+{
+    display: grid;
+    grid-gap: 1.75rem;
+}
+
+/* Affichage d'un article dans le bloc des articles hébergmements */
+.articles_hebergements article {
+    border-radius: 30px;
+    border: solid white 5px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 12px 3px #d2d2d2;
+}
+
+/* Affichage lien sur un article résultats hébergements */
+.articles_hebergements article a 
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Redimentionnement d'un image d'un article */
+.results_hebergements article img 
+{
+    height: 118px;
+    width: 100%;
+}
+
+
+.articles_hebergements article img 
+{
+    object-fit: cover;
+}
+
+/* Affichage du texte d'un article */
+.articles_hebergements article .article_text 
+{
+    margin: 15px 11px 9px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Marges extérieurs pour les titres h3 des articles hébergements */
+.articles_hebergements article h3 {
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+/* Marges extérieurs pour les paragraphes des articles hébergements */
+.articles_hebergements article .article_text p 
+{
+    margin-bottom: 13px;
+    margin-top: 0px;
+    flex-grow: 3;
+}
+
+/* Affichage de mon lien Afficher Plus */
+.results section .results_show_more 
+{
+    margin-top: auto;
+    font-weight: bold;
+}
+
+
+                    /* ------- Section Popular Results CSS ------- */
+
+
+
+
+/* Affichage de la section résultats poppulaires */
+.results section.results_popular 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 49px 41px;
+    min-width: 410px;
+}
+
+/* Affichage titre h2 pour la section résultats populaires */
+.results section.results_popular h2
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Couleur de l'icone stats dans le h2 de la section résultats populaire */
+.results section.results_popular h2 i
+{
+    color: black;
+}
+
+/* Affichage des éléments articles en grille dans la section résultats populaires */
+section.results_popular .articles_popular 
+{
+    flex-grow: 2;
+    grid-template-rows: repeat(3, minmax(145px, 100%));
+}
+
+/* Affichage d'un article */
+section .articles_popular 
+{
+    display: block;
+    /*grid-gap: 1.75rem;*/
+}
+
+/* Hauteur min d'un article */
+section.results_popular article 
+{
+    height: 160px;
+}
+
+/* Bordures d'un article */
+.articles_popular article 
+{
+    border-radius: 30px;
+    border: solid white 5px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 12px 3px #d2d2d2;
+}
+
+/* affichage en ligne des articles dans la section résultat populaires */
+.results_popular article a 
+{
+    flex-direction: row;
+}
+
+/* Affichage d'un item article résultats populaire */
+.articles_popular article a 
+{
+    display: flex;
+    height: 100%;
+}
+
+/* Largeur max et hauteur min d'une image d'un article Résultat populaires  */
+.results_popular article img 
+{
+    max-width: 40%;
+    min-height: 160px;
+}
+
+/* Image redimensionner en mode cover selon l'affichage */
+.articles_popular article img 
+{
+    object-fit: cover;
+}
+
+/* Affichage bloc texte d'un article résultats populaire */
+.articles_popular article .article_text {
+    margin: 15px 11px 9px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Affichage titre h3 d'un article résultat populaire */
+.articles_popular article h3 
+{
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+/* Affichage paragraphe texte d'un article résultat populaire */
+.articles_popular article .article_text p 
+{
+    margin-bottom: 13px;
+    margin-top: 0px;
+    flex-grow: 3;
+}
+
+
+
+                        /* ------- Section Activities Results CSS ------- */
+
+
+
+/* Affichage en 3 colonnes de la section résultats activités */
+.results section.results_activities 
+{
+    grid-column: span 3;
+    box-sizing: border-box;
+}
+
+/* Affichage du bloc des articles activités  */
+section.results_activities .articles_activities 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+    grid-auto-flow: dense;
+}
+
+/* Affichage articles sur 2 lignes */
+section.results_activities article.article_activities 
+{
+    grid-row: span 2;
+}
+
+/* Bordure d'un artcile dans la section */
+.articles_activities article 
+{
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 12px 3px #d2d2d2;
+}
+
+/* Pas de bordure pour les articles */
+.results_activities article 
+{
+    border: none;
+}
+
+/* Affichage contenu cliquable a dans la section */
+.results_activities article a 
+{
+    justify-content: flex-end;
+}
+
+/* Affichage contenu cliquable dans le bloc des articles afin d'afficher le titre h3 */
+.articles_activities article a 
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Hauteur image article */
+.results_activities article img 
+{
+    height: 100%;
+}
+
+/* Affichage en mode cover d'une image dans un article */
+.articles_activities article img 
+{
+    object-fit: cover;
+}
+
+/* Affichage titre h3 d'un article */
+.results_activities article h3 
+{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin: 0 15px;
+    line-height: 1.5;
+}
+
+
+
+                    /* ------- Footer CSS ------- */
+
+
+
+/* Affichage du footer */
+footer 
+{
+    background-color: #f2f2f2;
+    padding: 50px;
+    display: block;
+}
+
+/* Affichage en ligne du menu navigation du footer */
+footer nav 
+{
+    max-width: 1340px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Largeur d'une section dans le nav du footer */
+footer nav section 
+{
+    width: 30%;
+}
+
+/* Affichage des listes a puces dans le footer */
+footer ul 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Espace entre les lignes d'une liste à puces */
+footer li 
+{
+    line-height: 2;
+}
+
+footer a 
+{
+    color: black;
+}
+
