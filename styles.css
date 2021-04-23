@@ -127,7 +127,10 @@ div.main_content
     display: block;
     margin: 0 auto;
     max-width: 1350px;
+    padding: 0 20px;
+
 }
+
 
 /* Affichage d'un article */
 article 
@@ -223,7 +226,38 @@ header .sign_up_button a
     color: #0065fc;
 }
 
+/* media queries pour le header et le menu navigation */
+@media screen and (max-width: 768px)
+{
+    header 
+    {
+        align-items: center;
+        margin-top: 20px;
+    }
+    /* Menu navigation en position 2 afin que le bouton inscrire reste en haut */
+    header nav 
+    {
+        order: 2;
+        width: 100%;
+    }
+    
+    header nav ul 
+    {
+        width: 100%;
+        padding: 0px;
+    }
 
+    header nav ul li 
+    {
+        width: 50%;
+        text-align: center;
+    }
+
+    header .sign-up-button 
+    {
+        margin: 25px 0;
+    }
+}
 
                             /* ------- Search CSS ------- */
 
@@ -325,7 +359,8 @@ header .sign_up_button a
 }
 
 /* Affichage des icones pour chaque filtre */
-.filter_option .filter_option_icon {
+.filter_option .filter_option_icon 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,11 +372,35 @@ header .sign_up_button a
 }
 
 /* Affichage des libellés pour chaque filtre */
-.filter_option .filter_option_label {
+.filter_option .filter_option_label 
+{
     padding: 0 20px 0 15px;
     cursor: pointer;
 }
-
+ /* media queries pour le champs de saisie recherche */
+@media screen and (max-width: 460px)
+{
+    /* pas de largeur */
+    .search_input 
+    {
+        width: unset;
+    }
+    /* On pas le texte recherche dans le bouton submit */
+    .search_input button[type="submit"] .search_submit 
+    {
+        display: none;
+    }
+    /* On affiche l'icone recherche */
+    .search_input button[type="submit"] .search_submit_icon 
+    {
+        display: inherit;
+    }
+    /* Couleur de l'icone recherche */
+    .search_input button[type="submit"] .search_submit_icon i 
+    {
+        color: white;
+    }
+}
 
 
                         /* ------- Section Results hébergments CSS ------- */
@@ -353,20 +412,13 @@ header .sign_up_button a
 .results
 {
     margin-bottom: 63px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
 }
 
-@media (min-width: 768px)
-{
-    .results
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 40px;
-    } 
-}
 
 /* Affichage de la section du resultats des hébergements */
-
 .results section.results_hebergements 
 {
     grid-column: span 2;
@@ -374,10 +426,12 @@ header .sign_up_button a
     border-radius: 30px;
     padding: 49px 41px;
     min-width: 410px;
+    box-sizing: border-box;
 }
 
 /* Affichage des articles dans la section resultats des hébergements */
-section.results_hebergements .articles_hebergements {
+section.results_hebergements .articles_hebergements 
+{
     grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
     margin-bottom: 35px;
 }
@@ -389,8 +443,9 @@ section .articles_hebergements
     grid-gap: 1.75rem;
 }
 
-/* Affichage d'un article dans le bloc des articles hébergmements */
-.articles_hebergements article {
+/* Bordures d'un article dans le bloc des articles hébergmements */
+.articles_hebergements article 
+{
     border-radius: 30px;
     border: solid white 5px;
     overflow: hidden;
@@ -449,6 +504,58 @@ section .articles_hebergements
     font-weight: bold;
 }
 
+/* media queries pour le bloc results */
+@media screen and (max-width: 1090px)
+{
+    /* Affichage avec flexbox afin d'afficher les sections les une en dessous des autres */
+    .results 
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    /* Affichage de la section results hebergments en position 2 */
+    .results section.results_hebergements 
+    {
+        order: 2;
+        background-color: unset;
+    }
+    /* Taille min/max des articles de la section result hebergements */
+    .results section.results_hebergements .articles_hebergements 
+    {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    /* Section results popular en position 1 */
+    .results section.results_popular 
+    {
+        order: 1;
+        border-radius: unset;
+        min-width: unset;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* re-size des lignes et colonnes de la section results popular */
+    .results section.results_popular .articles_popular 
+    {
+        grid-template-rows: repeat(auto-fit, 170px);
+        grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    }
+
+    .results section.results_activities 
+    {
+        order: 3;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .results section.results_activities .articles_activities 
+    {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-rows: unset;
+    }
+    
+    
+}
 
                     /* ------- Section Popular Results CSS ------- */
 
@@ -489,14 +596,14 @@ section.results_popular .articles_popular
 /* Affichage d'un article */
 section .articles_popular 
 {
-    display: block;
-    /*grid-gap: 1.75rem;*/
+    display: grid;
+    grid-gap: 1.75rem;
 }
 
 /* Hauteur min d'un article */
 section.results_popular article 
 {
-    height: 160px;
+    min-height: 160px;
 }
 
 /* Bordures d'un article */
@@ -510,13 +617,13 @@ section.results_popular article
 }
 
 /* affichage en ligne des articles dans la section résultat populaires */
-.results_popular article a 
+.results_popular article a
 {
     flex-direction: row;
 }
 
 /* Affichage d'un item article résultats populaire */
-.articles_popular article a 
+.articles_popular article a
 {
     display: flex;
     height: 100%;

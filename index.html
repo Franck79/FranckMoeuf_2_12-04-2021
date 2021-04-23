@@ -40,7 +40,10 @@
                     <input type="search" name="ville" aria-label="Entrez le nom d'une ville" 
                     autocomplete="on" placeholder="Marseille, France"> <!-- Champ de saisie Recherche -->
                     <button type="submit"> <!-- Bouton validation recherche -->
-                        Rechercher
+                        <span class="search_submit">Rechercher</span>
+                        <span class="search_submit_icon">
+                            <i class="fas fa-search"></i>
+                        </span>
                     </button>
                 </div>
                 <div class="filters"> <!-- Début Bloc filtres checkbox -->
@@ -95,7 +98,7 @@
                 <!-- Section résultats hébergements -->
                 <section id="hebergements" class="results_hebergements">
                     <h2>Hébergements à Marseille</h2>
-                    <div class="articles_hebergements">
+                     <div class="articles_hebergements">
                         <article><!-- Auberge la Cannebière -->
                             <a href="#auberge-la-cannebiere" title="Vers la page de Auberge la Cannebière">
                                 <img role="img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
@@ -207,20 +210,18 @@
                     <div class="articles_popular">
                         <article><!-- Hôtel Le soleil du matin -->
                             <a href="#hotel-le-soleil-du-matin" title="Vers la page Hôtel Le soleil du matin">
-                                <div>
-                                    <img role="img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                                </div>
+                            <img role="img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                             <div class="article_text" role="text">
-                                    <h3>Hôtel Le soleil du matin</h3>
-                                    <p>Nuit à partir de <strong>128€</strong></p>
-                                    <span role="img" aria-label="Hébergement 3 étoiles">
-                                        <i class="fas fa-star active"></i>
-                                        <i class="fas fa-star active"></i>
-                                        <i class="fas fa-star active"></i>
-                                        <i class="fas fa-star active"></i>
-                                        <i class="fas fa-star active"></i>
-                                    </span>
-                                </div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <strong>128€</strong></p>
+                                <span role="img" aria-label="Hébergement 3 étoiles">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                </span>
+                            </div>
                             </a>
                         </article>
                         <article><!-- Au coeur de l'eau Chambres d'hôtes -->
