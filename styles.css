@@ -787,7 +787,7 @@ footer a
 
     .results_popular article img 
     {
-        width: 143px;
+        min-width: 140px;
         height: 160px;
     }
     /* Position de la section activités */
