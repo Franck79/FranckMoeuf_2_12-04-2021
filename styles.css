@@ -556,7 +556,7 @@ section.results_popular article
 /* Largeur max et hauteur min d'une image d'un article Résultat populaires  */
 .results_popular article img 
 {
-    max-width: 40%;
+    width: 143px;
     min-height: 160px;
 }
 
@@ -611,7 +611,7 @@ section.results_activities .articles_activities
     grid-auto-flow: dense;
 }
 
-/* Affichage articles sur 2 lignes */
+/* Affichage articles sur 2 lignes pour la 2éme colonne */
 section.results_activities article.article_activities 
 {
     grid-row: span 2;
@@ -782,7 +782,13 @@ footer a
     .results section.results_popular .articles_popular 
     {
         grid-template-rows: repeat(auto-fit, 170px);
-        grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .results_popular article img 
+    {
+        width: 143px;
+        height: 160px;
     }
     /* Position de la section activités */
     .results section.results_activities 
@@ -796,6 +802,17 @@ footer a
     {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-template-rows: unset;
+        grid-gap: 1.75rem;
+    }
+
+    .results section.results_activities article.article_activities 
+    {
+        grid-row: span 1;
+    }
+    /* Hauteur d'un article */
+    .results section.results_activities article 
+    {
+        height: 200px;
     }
 }
 
