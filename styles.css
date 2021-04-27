@@ -226,10 +226,7 @@ header .sign_up_button
     color: #0065fc;
 }
 
-header .sign_up_button a
-{
-    color: #0065fc;
-}
+
 
 /* media queries pour le header et le menu navigation */
 @media screen and (max-width: 768px)
@@ -559,11 +556,6 @@ section.results_popular article
 {
     width: 143px;
     min-height: 160px;
-}
-
-/* Image redimensionner en mode cover selon l'affichage */
-.articles_popular article img 
-{
     object-fit: cover;
 }
 
@@ -610,6 +602,7 @@ section.results_activities .articles_activities
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-template-rows: repeat(2, 200px);
     grid-auto-flow: dense;
+    grid-gap: 1.75rem;
 }
 
 /* Affichage articles sur 2 lignes pour la 2éme colonne */
@@ -803,7 +796,6 @@ footer a
     {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-template-rows: unset;
-        grid-gap: 1.75rem;
     }
 
     .results section.results_activities article.article_activities 
@@ -817,6 +809,14 @@ footer a
     }
 }
 
+@media only screen and (min-width: 1091px) and (max-width: 1301px)
+{   
+    section.results_popular article 
+    {
+        height: 180px;
+    } 
+    
+}
 /* media queries pour le footer */
 @media screen and (max-width: 860px)
 {
