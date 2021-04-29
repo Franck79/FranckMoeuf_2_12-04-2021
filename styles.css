@@ -1,6 +1,7 @@
                                 /* ------- Global CSS ------- */
 
 
+                                
 /* Font family du body*/
 body 
 {
@@ -228,38 +229,7 @@ header .sign_up_button
 
 
 
-/* media queries pour le header et le menu navigation */
-@media screen and (max-width: 768px)
-{
-    header 
-    {
-        align-items: center;
-        margin-top: 20px;
-    }
-    /* Menu navigation en position 2 afin que le bouton inscrire reste en haut */
-    header nav 
-    {
-        order: 2;
-        width: 100%;
-    }
-    
-    header nav ul 
-    {
-        width: 100%;
-        padding: 0px;
-    }
 
-    header nav ul li 
-    {
-        width: 50%;
-        text-align: center;
-    }
-
-    header .sign-up-button 
-    {
-        margin: 25px 0;
-    }
-}
 
                             /* ------- Search CSS ------- */
 
@@ -710,12 +680,66 @@ footer a
 }
 
                             
-                            /* ------ Media queries ------ */
+                            /* ------ Media queries RESPONSIVE ------ */
 
+                            
+                            
 
+/* media queries pour le header et le menu navigation */
+@media screen and (max-width: 650px)
+{
+    header 
+    {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* Menu navigation en position 2 afin que le bouton inscrire reste en haut */
+    header nav 
+    {
+        order: 2;
+        width: 100%;
+    }
+    
+    header nav ul 
+    {
+        width: 100%;
+        padding: 0px;
+    }
+
+    header nav ul li 
+    {
+        width: 50%;
+        text-align: center;
+    }
+
+    header nav ul li a,header nav ul li a:hover,header nav ul li a:focus 
+    {
+        border: none;
+        color: inherit;
+        border-bottom: #f2f2f2 2px solid;
+        padding: 23px 0 19px;
+    }
+    
+    header nav ul li a:active, header nav ul li a:focus 
+    {
+      /*When the current page is the active menu element.
+      Not working at the moment, since it is a prototype.*/
+      border-bottom: #0065fc 2px solid;
+      padding-bottom: 17px;
+      color: #0065fc;
+    }
+
+    header .sign-up-button 
+    {
+        margin: 25px 0;
+    }
+
+}
 /* media queries pour le champs de saisie recherche */
 @media screen and (max-width: 460px)
 {
+    
     /* pas de largeur */
     .search_input 
     {
@@ -817,6 +841,8 @@ footer a
     } 
     
 }
+
+
 /* media queries pour le footer */
 @media screen and (max-width: 860px)
 {
