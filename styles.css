@@ -694,6 +694,11 @@ footer a
         margin-top: 20px;
     }
 
+    header .logo_reservia img 
+    {
+        padding: 0;
+    }
+
     /* Menu navigation en position 2 afin que le bouton inscrire reste en haut */
     header nav 
     {
