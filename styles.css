@@ -728,35 +728,35 @@ footer a
         width: 100%;
     }
     
-    header nav ul 
+    header nav ul.menu 
     {
         width: 100%;
         padding: 0px;
     }
 
-    header nav ul li 
+    header nav ul.menu li 
     {
         width: 50%;
         text-align: center;
     }
 
-    header nav ul li a,header nav ul li a:hover,header nav ul li a:focus 
+    /* Bordures et marges du menu */
+    header nav ul.menu li a, header nav ul.menu li a:focus 
     {
         border: none;
-        color: inherit;
         border-bottom: #f2f2f2 2px solid;
         padding: 23px 0 19px;
     }
-    
-    header nav ul li a:active, header nav ul li a:focus 
+    /* bordure bas bleue sur lien actif */
+    /* bordure bas bleue sur lien focus par tab et survol souris */
+    header nav ul.menu li a:active, header nav ul.menu li a:hover ,header nav ul.menu li a:focus 
     {
-      /*When the current page is the active menu element.
-      Not working at the moment, since it is a prototype.*/
-      border-bottom: #0065fc 2px solid;
-      padding-bottom: 17px;
-      color: #0065fc;
+        border-top: inherit;
+        border-bottom: #0065fc 3px solid;
+        padding-bottom: 17px;
+        color: #0065fc;
     }
-
+    
     header .sign-up-button 
     {
         margin: 25px 0;
