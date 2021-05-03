@@ -31,6 +31,8 @@ a
     color:black;
 }
 
+
+
 /* Affichage des titres h1 */
 h1 
 {
@@ -209,6 +211,12 @@ header nav ul
     margin: 0 auto;
     width: 311px;
     justify-content: space-around;
+    
+}
+
+.menu a:hover 
+{
+    border-top: 3px #0065fc solid;
 }
 
 /* Affichage des liens du menu navigation */
@@ -220,6 +228,11 @@ header nav li a
     color: black;
 }
 
+.menu1 a
+{
+    color: #0065fc;
+}
+
 /* Bouton Lien d'inscription dans le header */
 header .sign_up_button 
 {
@@ -229,8 +242,8 @@ header .sign_up_button
     margin: 35px 25px;
     font-weight: bold;
     color: #0065fc;
+    cursor: pointer;
 }
-
 
 
 
