@@ -462,6 +462,7 @@ section.results_hebergements .articles_hebergements
     margin-bottom: 13px;
     margin-top: 0px;
     flex-grow: 3;
+    padding: 0;
 }
 
 /* Affichage de mon lien Afficher Plus */
@@ -572,6 +573,7 @@ section.results_popular article
     margin-bottom: 13px;
     margin-top: 0px;
     flex-grow: 3;
+    padding: 0;
 }
 
 
