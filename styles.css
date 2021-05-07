@@ -228,9 +228,22 @@ header nav li a
     color: black;
 }
 
+.menu1 
+{
+    width: 50%;
+    text-align: center;
+}
+
+.menu2
+{
+    width: 50%;
+    text-align: center;
+}
+
 .menu1 a
 {
     color: #0065fc;
+    border-top: 3px solid #0065fc;
 }
 
 /* Bouton Lien d'inscription dans le header */
@@ -757,6 +770,12 @@ footer a
         border-bottom: #0065fc 3px solid;
         padding-bottom: 17px;
         color: #0065fc;
+    }
+
+    header nav ul li.menu1 a
+    {
+        color: #0065fc;
+        border-bottom: 3px solid #0065fc;
     }
     
     header .sign-up-button 
