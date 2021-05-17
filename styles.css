@@ -37,7 +37,7 @@ a
 h1 
 {
     margin-bottom: 0.4em;
-    font-size: 2em;
+    font-size: 23px;
     margin: 0.67em 0;
     padding: 0 20px;
 }
@@ -101,6 +101,7 @@ i
 h2 
 {
     margin: 0 0 1.75rem 0;
+    font-size: 22px;
 }
 
 /* Affichage du paragraphe informations résultats */
@@ -155,7 +156,7 @@ img
 h3 
 {
     display: block;
-    font-size: 1.17em;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -247,11 +248,19 @@ header .sign_up_button
 {
     background-color: unset;
     border: none;
-    padding: 0 20px;
+    border-radius: 15px;
     margin: 35px 25px;
     font-weight: bold;
     color: #0065fc;
     cursor: pointer;
+}
+
+/* Changement couleurs au survol du bouton d'insciption */
+header .sign_up_button:hover,
+header .sign_up_button:focus 
+{
+    background-color: #0065fc;
+    color: white;
 }
 
 
@@ -355,10 +364,10 @@ header .sign_up_button
 /* Affichage des filtres checkbox*/
 .filter_option 
 {
-    margin: 5px 24px 5px 0;
+    margin: 5px 8px 5px 0;
     display: flex;
     align-items: center;
-    box-shadow: inset 0 0 0 2px #f2f2f2;
+    box-shadow: inset 0 0 0 2px #D5D6D8;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -381,6 +390,14 @@ header .sign_up_button
 {
     padding: 0 20px 0 15px;
     cursor: pointer;
+}
+
+/* Changement de couleurs des filtres au survol */
+.filter_option:hover,
+.filter_option:focus 
+{
+    background-color: #0065fc;
+    color: white;
 }
 
 
@@ -461,14 +478,14 @@ section.results_hebergements .articles_hebergements
 
 /* Marges extérieurs pour les titres h3 des articles hébergements */
 .articles_hebergements article h3 {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     margin-top: 0;
 }
 
 /* Marges extérieurs pour les paragraphes des articles hébergements */
 .articles_hebergements article .article_text p 
 {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
     margin-top: 0px;
     flex-grow: 3;
     padding: 0;
@@ -521,13 +538,13 @@ section.results_popular .articles_popular
 section .articles_popular 
 {
     display: grid;
-    grid-gap: 1.75rem;
+    grid-gap: 2rem;
 }
 
 /* Hauteur min d'un article */
 section.results_popular article 
 {
-    min-height: 160px;
+    height: 150px;
 }
 
 /* Bordures d'un article */
@@ -538,6 +555,7 @@ section.results_popular article
     overflow: hidden;
     background-color: white;
     box-shadow: 0px 0px 12px 3px #d2d2d2;
+    max-width: 365px;
 }
 
 /* affichage en ligne des articles dans la section résultat populaires */
@@ -556,9 +574,10 @@ section.results_popular article
 /* Largeur max et hauteur min d'une image d'un article Résultat populaires  */
 .results_popular article img 
 {
-    width: 143px;
+    width: 142px;
     min-height: 160px;
     object-fit: cover;
+    
 }
 
 /* Affichage bloc texte d'un article résultats populaire */
@@ -572,14 +591,14 @@ section.results_popular article
 /* Affichage titre h3 d'un article résultat populaire */
 .articles_popular article h3 
 {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     margin-top: 0;
 }
 
 /* Affichage paragraphe texte d'un article résultat populaire */
 .articles_popular article .article_text p 
 {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     margin-top: 0px;
     flex-grow: 3;
     padding: 0;
@@ -804,6 +823,12 @@ footer a
     {
         color: white;
     }
+
+    /* Ajout des bordure arrondies sur bouton recherche coin haut et bnas à gauche */
+    .search_input button[type="submit"] 
+    {
+        border-radius: 17px 17px;
+    }
 }
 
 /* media queries pour le bloc results */
@@ -889,7 +914,7 @@ footer a
     section .articles_popular
     {
         display: grid;
-        grid-gap: 5rem;
+        grid-gap: 4rem;
     }
     
 }
