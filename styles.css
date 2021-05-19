@@ -211,11 +211,6 @@ header nav ul
     
 }
 
-.menu a:hover 
-{
-    border-top: 3px #0065fc solid;
-}
-
 /* Affichage des liens du menu navigation */
 header nav li a 
 {
@@ -223,6 +218,19 @@ header nav li a
     display: block;
     border-top: 2px solid rgba(245, 245, 245, 0);
     color: black;
+}
+
+/* Survol liens du menu de navigation */
+
+.menu1 a 
+{
+    color: #0065fc;
+    border-top: 3px #0065fc solid;
+}
+
+.menu a:hover 
+{
+    border-top: 3px #0065fc solid;
 }
 
 .menu1 
@@ -237,11 +245,7 @@ header nav li a
     text-align: center;
 }
 
-.menu1 a
-{
-    color: #0065fc;
-    border-top: 3px solid #0065fc;
-}
+
 
 /* Bouton Lien d'inscription dans le header */
 header .sign_up_button 
@@ -364,7 +368,7 @@ header .sign_up_button:focus
 /* Affichage des filtres checkbox*/
 .filter_option 
 {
-    margin: 5px 8px 5px 0;
+    margin: 5px 20px 5px 0px;
     display: flex;
     align-items: center;
     box-shadow: inset 0 0 0 2px #D5D6D8;
@@ -829,6 +833,12 @@ footer a
     {
         border-radius: 17px 17px;
     }
+
+    /* Affichage des filtres checkbox*/
+    .filter_option 
+    {
+        margin: 5px 8px 5px 0px;
+    }
 }
 
 /* media queries pour le bloc results */
@@ -915,6 +925,36 @@ footer a
     {
         display: grid;
         grid-gap: 4rem;
+    }
+    
+}
+
+/* média query pour afficher les articles dans le bon ordre en résolution plus basse */
+@media only screen and (max-width: 1258px)
+{   
+    #article_vieuxport
+    {
+        order: 0;
+    }
+    #article_fort
+    {
+        order:1;
+    }
+    #article_frioul
+    {
+        order:2;
+    }
+    #article_parcnat
+    {
+        order:3;
+    }
+    #article_notredame
+    {
+        order:4;
+    }
+    #article_parc
+    {
+        order:5;
     }
     
 }
