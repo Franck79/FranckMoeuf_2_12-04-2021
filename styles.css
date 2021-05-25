@@ -417,6 +417,7 @@ header .sign_up_button:focus
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+    padding: 0px 20px;
 }
 
 
@@ -687,6 +688,17 @@ section.results_activities article.article_activities
     line-height: 1.5;
 }
 
+.article_pomegues
+{
+    height:230px;
+}
+
+.article_ilesdefrioul
+{
+    margin-top: 28px;
+    height:170px;
+}
+
 
 
                     /* ------- Footer CSS ------- */
@@ -926,6 +938,17 @@ footer a
         display: grid;
         grid-gap: 4rem;
     }
+
+    #article_fort
+    {
+        height:unset;
+    }
+
+    #article_frioul
+    {
+        height:unset;
+        margin-top: unset;
+    }
     
 }
 
@@ -943,6 +966,7 @@ footer a
     #article_frioul
     {
         order:2;
+        margin-top: unset;
     }
     #article_parcnat
     {
@@ -956,7 +980,19 @@ footer a
     {
         order:5;
     }
+
+    .results section.results_activities {
+        padding: 0 15px;
+    }
     
+}
+
+@media only screen and (min-width: 585px) and (max-width: 856px)
+{
+    .results section.results_popular .articles_popular 
+    {
+        padding: 0px 50px 0px 80px;
+    }
 }
 
 
